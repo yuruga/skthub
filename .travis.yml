@@ -1,0 +1,30 @@
+language: go
+go:
+- 1.3
+before_install:
+- go get -d -v ./... && go build -v ./...
+script:
+- go test -v ./...
+- go install -v ./...
+notifications:
+  slack:
+    secure: t/2Qo7vdDGc549/XzNSQXyz3pVWlvwfX3Ofd8hojPhGy/d3OirQRqm3d823nG5UztposwK1BMn/IFd2gVTlS/bw3qLb1N1uAExKQnEnJwn4+X6hbpdpgsn2U5a0W7IQ1MdN8SQ1biJyWp+O9VueB9syQs9atAfMObLTbBcdw4/0=
+deploy:
+- provider: heroku
+  strategy: git
+  api_key:
+    secure: "XqEqKA/ex9bE5jWfitdTcKzLaA02hL80AluY2IqZ3sqpdcKW3O8xLw2jYfomtRy0WdfNRedzGHUTWSRKS26nLc5539e1f7/8PO0PBDi1MyPwBoKkixjliDb4H6llVCvweEMiLseSYks+j291oJpsGNmiVJ+681/myHuNr0OrzVM="
+  app:
+    secure: "ksiUTJuA49fXaPiuz+9nuuP0m1/XUzcqTb5N0l5Pzw7t00PrNmNX2JQF5SXZYe/+k5buZnX/aELb5YUo4u/K/IYwTlAM0/TNjWj3M15dCJTdx0hiYzH3aaEyaQjPbfrJDHbrUthCy7ItVk0oaVWrtnmec35zUDfBkxlx3nFXOjc="
+  on:
+    repo: yuruga/skthub
+    branch: develop
+- provider: heroku
+  strategy: git
+  api_key:
+    secure: "XqEqKA/ex9bE5jWfitdTcKzLaA02hL80AluY2IqZ3sqpdcKW3O8xLw2jYfomtRy0WdfNRedzGHUTWSRKS26nLc5539e1f7/8PO0PBDi1MyPwBoKkixjliDb4H6llVCvweEMiLseSYks+j291oJpsGNmiVJ+681/myHuNr0OrzVM="
+  app:
+    secure: "PKNsVNRng5JFk3CwiS3XeL2XtJ7DeUUvNJ/HR6AGfVH6kQXGe4yeK2BWhoHm/KSqZagGTIzvpM2TK0n9UQ63NoNYJcum0x7k2LnUqG/SJEER7Gqdl7bsePJreVb323OUaFpmGl8E+iyd083xQVMTX+tR/JX5aATfGrLs/hz1XvE="
+  on:
+    repo: yuruga/skthub
+    branch: master
