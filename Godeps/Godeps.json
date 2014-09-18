@@ -2,7 +2,7 @@
 	"ImportPath": "github.com/yuruga/skthub",
 	"GoVersion": "go1.3",
 	"Packages": [
-		"skthub-server/main.go"
+		"./..."
 	],
 	"Deps": [
 		{
