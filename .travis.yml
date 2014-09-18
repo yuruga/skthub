@@ -18,7 +18,7 @@ deploy:
     secure: "ksiUTJuA49fXaPiuz+9nuuP0m1/XUzcqTb5N0l5Pzw7t00PrNmNX2JQF5SXZYe/+k5buZnX/aELb5YUo4u/K/IYwTlAM0/TNjWj3M15dCJTdx0hiYzH3aaEyaQjPbfrJDHbrUthCy7ItVk0oaVWrtnmec35zUDfBkxlx3nFXOjc="
   on:
     repo: yuruga/skthub
-    branch: develop
+    branch: develop:master
 - provider: heroku
   strategy: git
   api_key:
