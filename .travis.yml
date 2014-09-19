@@ -15,8 +15,10 @@ deploy:
   api_key:
     secure: "XqEqKA/ex9bE5jWfitdTcKzLaA02hL80AluY2IqZ3sqpdcKW3O8xLw2jYfomtRy0WdfNRedzGHUTWSRKS26nLc5539e1f7/8PO0PBDi1MyPwBoKkixjliDb4H6llVCvweEMiLseSYks+j291oJpsGNmiVJ+681/myHuNr0OrzVM="
   app:
-    secure: "NxVAb5ZgpFQB8LisNX4RA3uehJfwb1ruY2Fet9q/2xG9eOvmscNgLYODP5eZjNJboyBnkkhZ4ToiY+JOZ7wizFoZRqFDahdia5pkbx6d+GnerGCAv9btUyH3uDTZr0VM6X0zdcZmUxr5udmGT229i3mx42IiwYxmuBXrCNhqDSU="
-    secure: "rvjCaXn7q6/0zZMZTAPJowTwiBII3KUJq8xbwD+7npuAyYIRYF0MSlSrOAgvkcfHNrjr8yMSBbVhLwXVzV9YvodWDMp29GsepeIMa7bF2zFEPQEBYhnj+8YZLJUq3EdHn/9Uig5FoyhCh5wrXwIcShn3DjVCa6IptlJgQoE6Gvw="
+    master:
+      secure: "hxJ/AGzJmTVfMhf8CpbmeTDySohLZMr7v/9A96lb92eYus+r4MZDmAirAqnalBMzZdPKPk8SrZDB2siVvP10+YNCHtg7/CtvSojGSjsJoQ/D4I1ZYQt+XPdbzX7TEAGEUGWifZYMXRUZYeMY4dWITbjNa1eKkDeTygvJ2GiVHEg="
+    develop:
+      secure: "oIlI98ZSi1AbEhfJ3qgybkan8o7LGB5XntMgwd/24u4dZl6dwQt+ugkamV/4y9Zkt4DjMrKboKKCP4oNmmhQudSt8zbFwn2pw23qyJ57YnWLuX3jr7ADr4LaacoAbX6rWdkFpWAUG0vkzsB/2YXb3twxAQHCk7yE6OZm3MoU6BQ="
   on:
     repo: yuruga/skthub
     branch:
