@@ -23,9 +23,9 @@ func main() {
 	server.On("connection", func(so socketio.Socket) {
 		log.Println("on connection")
 		so.Join("chat")
-		so.On("chat message", func(msg string) {
-			log.Println("emit:", so.Emit("chat message", msg))
-			so.BroadcastTo("chat", "chat message", msg)
+		so.On("event", func(msg string) {
+			log.Println("emit:", so.Emit("event", msg + "111"))
+			so.BroadcastTo("chat", "event", msg + "222")
 		})
 		so.On("disconnection", func() {
 			log.Println("on disconnect")
