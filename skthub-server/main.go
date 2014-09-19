@@ -23,6 +23,7 @@ func main() {
 	server.On("connection", func(so socketio.Socket) {
 		log.Println("on connection")
 		so.Join("chat")
+		so.Emit("connectied", "hgoehgoe")
 		so.On("event", func(msg string) {
 			log.Println("emit:", so.Emit("event", msg + "111"))
 			so.BroadcastTo("chat", "event", msg + "222")
